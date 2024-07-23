@@ -1,29 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <main>
-        <img src="your-profile-image.jpg" alt="Your Name" class="profile-image">
-        <h1><span class="greeting">Hi, I'm</span> Your Name</h1>
-        <h2>SDE Developer</h2>
-        <p class="description">
-            I'm a passionate software developer with experience in web technologies.
-            I love creating efficient and user-friendly applications that solve real-world problems.
+<!-- Modified index.html -->
+
+<main>
+  <aside class="sidebar">
+    <div class="profile-info">
+      <figure class="profile-image">
+        <img src="assets/profile-pic.jpg" alt="Alex Johnson">
+      </figure>
+      
+      <div class="bio">
+        <h1 class="name">Alex Johnson</h1>
+        <p class="title">Full Stack Developer</p>
+      </div>
+
+      <button class="expand-btn" aria-label="Expand sidebar">
+        <ion-icon name="chevron-down"></ion-icon>
+      </button>
+    </div>
+
+    <div class="contact-info">
+      <ul class="contact-list">
+        <li class="contact-item">
+          <div class="icon-box">
+            <ion-icon name="mail"></ion-icon>
+          </div>
+          <div class="contact-info">
+            <p class="contact-title">Email</p>
+            <a href="mailto:alex@example.com" class="contact-link">alex@example.com</a>
+          </div>
+        </li>
+        <!-- Add more contact items -->
+      </ul>
+    </div>
+  </aside>
+
+  <div class="main-content">
+    <article class="about active" data-page="about">
+      <header>
+        <h2 class="h2 article-title">About Me</h2>
+      </header>
+
+      <section class="about-text">
+        <p>
+          I'm a passionate full stack developer with experience in building responsive 
+          and user-friendly web applications. My expertise includes JavaScript, React, 
+          Node.js, and SQL databases.
         </p>
-        <div class="social-links">
-            <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-icon">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="mailto:your.email@example.com" class="social-icon">
-                <i class="fas fa-envelope"></i>
-            </a>
-        </div>
-    </main>
-</body>
-</html>
+      </section>
+
+      <section class="service">
+        <h3 class="h3 service-title">What I'm doing</h3>
+
+        <ul class="service-list">
+          <li class="service-item">
+            <div class="service-icon-box">
+              <img src="assets/icon-design.svg" alt="design icon" width="40">
+            </div>
+            <div class="service-content-box">
+              <h4 class="h4 service-item-title">Web design</h4>
+              <p class="service-item-text">
+                Modern and responsive designs for optimal user experience.
+              </p>
+            </div>
+          </li>
+          <!-- Add more service items -->
+        </ul>
+      </section>
+    </article>
+  </div>
+</main>
