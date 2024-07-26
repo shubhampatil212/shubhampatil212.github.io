@@ -3,51 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Shubham Patil - MERN Stack Developer and AR/VR Enthusiast">
-    <title>Shubham Patil - MERN Stack Developer</title>
+    <title>Shubham Patil - Computer Engineering Student</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <a href="#main" class="skip-link">Skip to content</a>
+
     <div class="container">
         <header class="header">
-            <img src="shubham.jpg" alt="Shubham Patil" class="profile-img">
+            <img src="profile.jpeg" alt="Shubham Patil" class="profile-img">
             <h1>Hi, I'm <span class="highlight">Shubham Patil</span> 👋</h1>
-            <p>MERN Stack Developer</p>
+            <p>Computer Engineering Student</p>
         </header>
 
         <nav>
-            <button class="nav-btn" data-section="about">About</button>
-            <button class="nav-btn" data-section="projects">Projects</button>
+            <button class="nav-btn active" data-section="about">About</button>
+            <button class="nav-btn" data-section="education">Education</button>
             <button class="nav-btn" data-section="skills">Skills</button>
+            <button class="nav-btn" data-section="projects">Projects</button>
             <button class="nav-btn" data-section="contact">Contact</button>
         </nav>
 
-        <main id="main">
+        <main id="main" role="main">
             <section id="about" class="section active">
                 <h2>About Me</h2>
-                <p>I'm a MERN Stack Developer with a passion for building dynamic and responsive web applications. I have hands-on experience in various projects, focusing on innovative solutions and user-friendly designs.</p>
-                <a href="resume.pdf" download class="btn">Download Resume</a>
+                <p>Dedicated third-year Computer Engineering student with a strong enthusiasm for Artificial Intelligence and Machine Learning. Actively engaged in learning and gaining hands-on skills in AI/ML through coursework and personal projects. Seeking an internship opportunity to strengthen and expand my skills while applying them in a dynamic and challenging environment.</p>
+                <a href="Shubham-Patil-Resume2.pdf" class="btn" download>Download Resume</a>
             </section>
 
-            <section id="projects" class="section">
-                <h2>Projects</h2>
-                <div class="project-filters">
-                    <button class="filter-btn active" data-filter="all">All</button>
-                    <button class="filter-btn" data-filter="web">Web</button>
-                    <button class="filter-btn" data-filter="ar-vr">AR/VR</button>
+            <section id="education" class="section">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <h3>B.E. Computer Engineering</h3>
+                    <p>Modern Education Society's Wadia College of Engineering, Pune</p>
+                    <p>Dec 2021 - present</p>
+                    <p>Current SGPA: 7.49</p>
                 </div>
-                <div class="projects-grid">
-                    <div class="project" data-category="web">
-                        <h3>MyPortfolio</h3>
-                        <p>A personal portfolio website showcasing my work, skills, and projects, built using React and Node.js.</p>
-                        <div class="project-links">
-                            <a href="#" target="_blank" rel="noopener noreferrer">Live</a>
-                            <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
-                        </div>
-                    </div>
-                    <!-- Add more projects as needed -->
+                <div class="education-item">
+                    <h3>HSC</h3>
+                    <p>Jai Hind Senior College, Dhule</p>
+                    <p>Jun 2021</p>
+                    <p>Grade: 86.83</p>
                 </div>
             </section>
 
@@ -55,27 +51,27 @@
                 <h2>Skills</h2>
                 <div class="skills-grid">
                     <div class="skill">
-                        <span class="skill-name">JavaScript</span>
+                        <span class="skill-name">Python</span>
                         <div class="skill-bar">
                             <div class="skill-progress" style="width: 90%;"></div>
                         </div>
                     </div>
                     <div class="skill">
-                        <span class="skill-name">React.js</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span class="skill-name">Node.js</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 80%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span class="skill-name">Express.js</span>
+                        <span class="skill-name">C++</span>
                         <div class="skill-bar">
                             <div class="skill-progress" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">Java (Basics)</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">MySQL</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%;"></div>
                         </div>
                     </div>
                     <div class="skill">
@@ -85,11 +81,19 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <span class="skill-name">AR/VR Development</span>
+                        <span class="skill-name">Linux (Ubuntu, Kali)</span>
                         <div class="skill-bar">
-                            <div class="skill-progress" style="width: 60%;"></div>
+                            <div class="skill-progress" style="width: 85%;"></div>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            <section id="projects" class="section">
+                <h2>Projects</h2>
+                <div class="project">
+                    <h3>Personal Assistant for Ubuntu</h3>
+                    <p>Automated tasks and enhanced system monitoring in a customized personal assistant for Ubuntu, utilizing Python.</p>
                 </div>
             </section>
 
@@ -102,16 +106,20 @@
                     <button type="submit" class="btn">Send Message</button>
                 </form>
                 <div class="social-icons">
-                    <a href="https://github.com/shubhampatil" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/shubhampatil" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://twitter.com/ishubhampatil" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/shubham-patil-b21a43231/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="https://github.com/shubhampatil212" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+                    <a href="https://leetcode.com/CyberSleuth/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode">LeetCode</a>
+                    <a href="https://www.hackerrank.com/profile/CyberSleuth23" target="_blank" rel="noopener noreferrer" aria-label="HackerRank">HackerRank</a>
                 </div>
             </section>
         </main>
     </div>
+    <!-- <footer>
+        <p>&copy; <span id="copyright-year"></span> Shubham Patil. All rights reserved.</p>
+    </footer> -->
 
-    <button id="theme-toggle" aria-label="Toggle dark mode">🌓</button>
+    <!-- <button id="theme-toggle">🌓</button> -->
 
-    <script src="script.js" type="module"></script>
+    <script src="script.js"></script>
 </body>
 </html>
