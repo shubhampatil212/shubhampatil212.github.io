@@ -3,123 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shubham Patil - Computer Engineering Student</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Professional portfolio of temp showcasing skills, projects, and experience">
+    <meta name="keywords" content="portfolio, web development, projects, skills">
+    <meta name="author" content="temp">
+    <title>Shubham's Professional Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Roboto', 'sans-serif'],
+                        'heading': ['Montserrat', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
-<body>
-    <a href="#main" class="skip-link">Skip to content</a>
+<body class="font-sans text-gray-800 bg-gray-100">
+    <header-component></header-component>
 
-    <div class="container">
-        <header class="header">
-            <img src="Shubham.jpg" alt="Shubham Patil" class="profile-img">
-            <h1>Hi, I'm <span class="highlight">Shubham Patil</span> 👋</h1>
-            <p>Computer Engineering Student</p>
-        </header>
+    <main>
+        <hero-section></hero-section>
+        <about-section></about-section>
+        <skills-section></skills-section>
+        <experience-section></experience-section>
+        <projects-section></projects-section>
+        <contact-section></contact-section>
+    </main>
 
-        <nav>
-            <button class="nav-btn active" data-section="about">About</button>
-            <button class="nav-btn" data-section="education">Education</button>
-            <button class="nav-btn" data-section="skills">Skills</button>
-            <button class="nav-btn" data-section="projects">Projects</button>
-            <button class="nav-btn" data-section="contact">Contact</button>
-        </nav>
+    <footer-component></footer-component>
 
-        <main id="main" role="main">
-            <section id="about" class="section active">
-                <h2>About Me</h2>
-                <p>Dedicated third-year Computer Engineering student with a strong enthusiasm for Artificial Intelligence and Machine Learning. Actively engaged in learning and gaining hands-on skills in AI/ML through coursework and personal projects. Seeking an internship opportunity to strengthen and expand my skills while applying them in a dynamic and challenging environment.</p>
-                <a href="Shubham-Patil-Resume2.pdf" class="btn" download>Download Resume</a>
-            </section>
-
-            <section id="education" class="section">
-                <h2>Education</h2>
-                <div class="education-item">
-                    <h3>B.E. Computer Engineering</h3>
-                    <p>Modern Education Society's Wadia College of Engineering, Pune</p>
-                    <p>Dec 2021 - present</p>
-                    <p>Current SGPA: 7.49</p>
-                </div>
-                <div class="education-item">
-                    <h3>HSC</h3>
-                    <p>Jai Hind Senior College, Dhule</p>
-                    <p>Jun 2021</p>
-                    <p>Grade: 86.83</p>
-                </div>
-            </section>
-
-            <section id="skills" class="section">
-                <h2>Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill">
-                        <span class="skill-name">Python</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 90%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span class="skill-name">C++</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 75%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span class="skill-name">Java (Basics)</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 60%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span class="skill-name">MySQL</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 80%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span class="skill-name">MongoDB</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 70%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span class="skill-name">Linux (Ubuntu, Kali)</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%;"></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="projects" class="section">
-                <h2>Projects</h2>
-                <div class="project">
-                    <h3>Personal Assistant for Ubuntu</h3>
-                    <p>Automated tasks and enhanced system monitoring in a customized personal assistant for Ubuntu, utilizing Python.</p>
-                </div>
-            </section>
-
-            <section id="contact" class="section">
-                <h2>Get in Touch</h2>
-                <form id="contact-form">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="message" placeholder="Your Message" required></textarea>
-                    <button type="submit" class="btn">Send Message</button>
-                </form>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/shubham-patil-b21a43231/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
-                    <a href="https://github.com/shubhampatil212" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
-                    <a href="https://leetcode.com/CyberSleuth/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode">LeetCode</a>
-                    <a href="https://www.hackerrank.com/profile/CyberSleuth23" target="_blank" rel="noopener noreferrer" aria-label="HackerRank">HackerRank</a>
-                </div>
-            </section>
-        </main>
-    </div>
-    <!-- <footer>
-        <p>&copy; <span id="copyright-year"></span> Shubham Patil. All rights reserved.</p>
-    </footer> -->
-
-    <!-- <button id="theme-toggle">🌓</button> -->
-
-    <script src="script.js"></script>
+    <script src="components/header-component.js"></script>
+    <script src="components/hero-section.js"></script>
+    <script src="components/about-section.js"></script>
+    <script src="components/skills-section.js"></script>
+    <script src="components/experience-section.js"></script>
+    <script src="components/projects-section.js"></script>
+    <script src="components/contact-section.js"></script>
+    <script src="components/footer-component.js"></script>
 </body>
 </html>
